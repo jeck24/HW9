@@ -56,7 +56,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(data) {
-    const fileName = `${data.name}.json`;
+    const fileName = `GENERATED_README.md`;
     
     fs.writeFile(fileName, JSON.stringify(data, null, '\t'), (err) =>
       err ? console.log(err) : console.log('Success!')
